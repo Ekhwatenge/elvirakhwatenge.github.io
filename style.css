@@ -135,38 +135,61 @@ a:hover { color: var(--accent); }
 .skill-card p { color: var(--text-muted); font-size: .88rem; margin: 0; }
 
 /* === TIMELINE === */
-.timeline { position: relative; padding-left: 1.5rem; }
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, var(--primary), var(--accent));
-  border-radius: 2px;
+
+  .org-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
 }
-.timeline-item {
-  position: relative;
-  padding: 0 0 2rem 1.5rem;
+
+.org-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: border-color .2s, transform .2s;
 }
-.timeline-dot {
-  position: absolute;
-  left: -6px; top: 4px;
-  width: 14px; height: 14px;
-  border-radius: 50%;
-  background: var(--primary);
-  border: 2px solid var(--bg);
-  box-shadow: 0 0 8px rgba(124,58,237,.6);
+
+.org-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
 }
-.timeline-date {
-  font-size: .8rem;
+
+.org-logo-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: rgba(124,58,237,.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--mono);
-  color: var(--accent);
-  margin-bottom: .25rem;
-  display: block;
+  font-size: .8rem;
+  color: var(--primary-light);
+  flex-shrink: 0;
 }
-.timeline-content h3 { font-size: 1rem; font-weight: 600; margin-bottom: .15rem; }
-.timeline-org { color: var(--primary-light); font-size: .88rem; margin-bottom: .35rem; }
-.timeline-content p { font-size: .9rem; color: var(--text-muted); margin: 0; }
+
+.org-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: .15rem;
+}
+
+.org-role {
+  font-size: .88rem;
+  color: var(--primary-light);
+  margin-bottom: .25rem;
+}
+
+.org-text {
+  font-size: .88rem;
+  color: var(--text-muted);
+}
+
+  
 
 /* === PUBLICATIONS === */
 .pub-list { display: flex; flex-direction: column; gap: 1rem; }
