@@ -1,98 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ethelmaria Khwatenge – Instructional Designer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
-    header { text-align: center; margin-bottom: 2rem; }
-    nav a { margin: 0 0.5rem; text-decoration: none; color: #0366d6; }
-    section { margin-bottom: 2rem; }
-    h1, h2 { color: #111827; }
-    .tagline { font-style: italic; color: #4b5563; }
-    .project { border: 1px solid #e5e7eb; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem; }
-    .badge { display: inline-block; padding: 0.15rem 0.4rem; font-size: 0.75rem; background: #e0f2fe; color: #0369a1; border-radius: 999px; margin-right: 0.25rem; }
-    footer { font-size: 0.8rem; color: #6b7280; text-align: center; margin-top: 3rem; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elvira K — Data Scientist & Educator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <h1>Ethelmaria Khwatenge</h1>
-    <p class="tagline">Instructional Designer · Learning Experience Designer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#process">Design Process</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <img
+        src="https://avatars.githubusercontent.com/u/60623159?v=4"
+        alt="Elvira Khwatenge avatar"
+        class="avatar"
+      />
+      <div class="hero-text">
+        <h1>👋 Hi, You can call me <span class="highlight">Elvira K</span></h1>
+        <p class="tagline">Data Scientist · AI/ML Researcher · Educator · Community Builder</p>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+        <div class="hero-cta">
+          <a href="mailto:elvirraimmar9494@gmail.com" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Write to Me
+          </a>
+          <a href="https://about.me/elvirakhwatenge" target="_blank" class="btn btn-secondary">
+            <i class="fas fa-user"></i> About Me
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      I design learning experiences that align measurable outcomes with engaging, accessible content.
-      My experience includes higher education, corporate training, and online learning.
-    </p>
-    <p>
-      Focus areas: needs analysis, learning objectives, assessment design, interactive e‑learning, and learning analytics.
-    </p>
-  </section>
+  <main>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title"><span class="mono">//</span> About</h2>
+        <p>
+          I am a Data Scientist with 7+ years of experience applying statistics, machine learning, and
+          data visualization to international development programmes across Africa, Europe, and North America.
+          I build predictive models and dashboards that support evidence-based decisions. Currently, I am
+          an Adjunct Lecturer at Kibabii University teaching AI, ML, IoT, distributed systems, and
+          cybersecurity to 500+ students.
+        </p>
+        <p>
+          I enjoy everything and anything code — I am always learning. Outside of tech, I play tennis,
+          chess, scrabble, badminton, volleyball, swimming, and kayaking. I also love hiking when I'm in
+          the mood, and I spend a lot of quality time chatting with my grandfather. 🧡
+        </p>
+      </div>
+    </section>
 
-    <div class="project">
-      <h3>Project Title 1 – Micro‑course for X learners</h3>
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title"><span class="mono">//</span> Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fas fa-brain skill-icon"></i>
+            <h3>Data Science & ML</h3>
+            <p>Python (pandas, NumPy, scikit-learn), R (tidyverse), SQL, regression, time-series, NLP, responsible AI</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-chart-bar skill-icon"></i>
+            <h3>Visualization & BI</h3>
+            <p>Power BI, Tableau, Excel, R Shiny; dashboards for programme monitoring and reporting</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-microchip skill-icon"></i>
+            <h3>IoT & Embedded</h3>
+            <p>Arduino, sensor networks, wireless protocols, embedded systems (MSc specialization)</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-lock skill-icon"></i>
+            <h3>Cybersecurity & Blockchain</h3>
+            <p>Cryptography, smart contracts, digital signatures, trust frameworks, Blockchain Council member</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database skill-icon"></i>
+            <h3>Data Engineering</h3>
+            <p>SQL querying, data modelling, Python automation scripts, Docker, Jupyter, Git/GitHub</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-chalkboard-teacher skill-icon"></i>
+            <h3>EdTech & Instructional Design</h3>
+            <p>Canvas LMS, Salesforce, learning analytics, curriculum development, TVET digitalisation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title"><span class="mono">//</span> Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jan 2025 – Present</span>
+              <h3>Adjunct Lecturer</h3>
+              <p class="timeline-org">Kibabii University, Kenya</p>
+              <p>Teaching AI, ML, IoT, distributed systems & cybersecurity; supervising student projects.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Nov 2023 – Apr 2024</span>
+              <h3>Programme Officer (Intern) — Digital Transformation</h3>
+              <p class="timeline-org">International Labour Organization (ILO), Geneva</p>
+              <p>Coordinated AI-enabled learning platform for 3,000+ TVET stakeholders across 50+ countries.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Feb – Sep 2023</span>
+              <h3>Software Engineer (Intern)</h3>
+              <p class="timeline-org">Tanzania Atomic Energy Commission, Arusha</p>
+              <p>Built Python automation scripts reducing manual processing time by 50%.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jan 2020 – Jul 2021</span>
+              <h3>Blended Learning Specialist</h3>
+              <p class="timeline-org">Per Scholas, New York, USA</p>
+              <p>Improved digital products across 25 training centres; built LMS + CRM integrated dashboards.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">May 2016 – Dec 2019</span>
+              <h3>Research & Development Officer</h3>
+              <p class="timeline-org">CEMASTEA, Nairobi, Kenya</p>
+              <p>Scaled STEM assessment platform for 20,000 teachers across 40 African countries; 78% predictive accuracy.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section section-alt" id="publications">
+      <div class="container">
+        <h2 class="section-title"><span class="mono">//</span> Publications</h2>
+        <div class="pub-list">
+          <div class="pub-card">
+            <span class="pub-badge pub-upcoming">Forthcoming 2026</span>
+            <h3>'A Smart Contract Trust Security Framework for Regulatory Inspection Systems in Nuclear Regulatory'</h3>
+            <p><em>Springer Nature</em> — accepted, scheduled April 2026</p>
+          </div>
+          <div class="pub-card">
+            <span class="pub-badge pub-published">2023</span>
+            <h3>'Digital Literacy and Firm Performance of SMEs in Nairobi County, Kenya'</h3>
+            <p><em>World Journal of Innovative Research</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section class="section" id="awards">
+      <div class="container">
+        <h2 class="section-title"><span class="mono">//</span> Fellowships & Awards</h2>
+        <div class="awards-grid">
+          <div class="award-item"><i class="fas fa-trophy"></i><span>AWITAI Scholarship — OCP Foundation / UNESCO AI Movement (Morocco, 2025)</span></div>
+          <div class="award-item"><i class="fas fa-medal"></i><span>Dr. Neema Mduma Academic Achievement Award (Tanzania, 2025)</span></div>
+          <div class="award-item"><i class="fas fa-star"></i><span>IHEA Foundation Scholarship — PoliMi Italy (2025–2027)</span></div>
+          <div class="award-item"><i class="fas fa-globe"></i><span>Deep Learning Indaba (Rwanda, 2025)</span></div>
+          <div class="award-item"><i class="fas fa-rocket"></i><span>Atlas Corps Tech Fellowship (USA, 2020)</span></div>
+          <div class="award-item"><i class="fas fa-link"></i><span>CIMPA Blockchain Scholarship (South Africa, 2023)</span></div>
+          <div class="award-item"><i class="fas fa-graduation-cap"></i><span>CENITEA Masters Scholarship (Tanzania, 2022)</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section class="section section-alt" id="community">
+      <div class="container">
+        <h2 class="section-title"><span class="mono">//</span> Community</h2>
+        <p>
+          I want my community to be better. I co-founded
+          <a href="https://www.oka4school.org/" target="_blank">OKA4School</a>
+          — a non-profit expanding access to quality education — and
+          <strong>Humara Tennis Kenya</strong>, promoting tennis at the grassroots level.
+        </p>
+        <div class="community-cards">
+          <a href="https://www.oka4school.org/" target="_blank" class="community-card">
+            <i class="fas fa-school"></i>
+            <div>
+              <h3>OKA4School</h3>
+              <p>Co-founder — expanding access to quality education</p>
+            </div>
+          </a>
+          <div class="community-card community-card-nolink">
+            <i class="fas fa-table-tennis"></i>
+            <div>
+              <h3>Humara Tennis Kenya</h3>
+              <p>Co-founder — grassroots tennis development in Kenya</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINKS -->
+    <section class="section" id="links">
+      <div class="container">
+        <h2 class="section-title"><span class="mono">//</span> Find Me Online</h2>
+        <div class="links-grid">
+          <a href="https://github.com/Ekhwatenge" target="_blank" class="link-card">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+            <small>Ekhwatenge</small>
+          </a>
+          <a href="https://medium.com/@elvirakhwatenge" target="_blank" class="link-card">
+            <i class="fab fa-medium"></i>
+            <span>Medium Blog</span>
+            <small>Fun tech blogs</small>
+          </a>
+          <a href="https://rpubs.com/Elvirakhwatenge" target="_blank" class="link-card">
+            <i class="fas fa-chart-line"></i>
+            <span>RPubs</span>
+            <small>Data reports</small>
+          </a>
+          <a href="https://elvirakhwatenge.shinyapps.io" target="_blank" class="link-card">
+            <i class="fas fa-flask"></i>
+            <span>Shiny Apps</span>
+            <small>Deployed R apps</small>
+          </a>
+          <a href="https://www.salesforce.com/trailblazer/ekhwatenge1" target="_blank" class="link-card">
+            <i class="fas fa-cloud"></i>
+            <span>Salesforce</span>
+            <small>Trailblazer profile</small>
+          </a>
+          <a href="https://about.me/elvirakhwatenge" target="_blank" class="link-card">
+            <i class="fas fa-user-circle"></i>
+            <span>About Me</span>
+            <small>Full profile</small>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
       <p>
-        Short description: context, target learners, and problem you solved. Mention tools (e.g., Articulate Rise, Storyline, Moodle, LMS) and your role.
+        Made with ❤️ by Elvira K &nbsp;·&nbsp;
+        <a href="mailto:elvirraimmar9494@gmail.com">elvirraimmar9494@gmail.com</a>
       </p>
-      <p>
-        <span class="badge">Needs Analysis</span>
-        <span class="badge">Storyboarding</span>
-        <span class="badge">Assessment Design</span>
-      </p>
-      <p>
-        Deliverables:
-        <a href="LINK_TO_LIVE_MODULE" target="_blank">View course</a> ·
-        <a href="LINK_TO_PDF_OR_CASE_STUDY" target="_blank">Design document</a>
-      </p>
+      <div class="footer-social">
+        <a href="https://github.com/Ekhwatenge" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://medium.com/@elvirakhwatenge" target="_blank" title="Medium"><i class="fab fa-medium"></i></a>
+        <a href="https://twitter.com/3ElviraIK" target="_blank" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+      </div>
     </div>
-
-    <div class="project">
-      <h3>Project Title 2 – Scenario‑based module</h3>
-      <p>Describe the scenario, learning objectives, and key design decisions.</p>
-      <p>
-        <span class="badge">Scenario‑based Learning</span>
-        <span class="badge">Accessibility</span>
-      </p>
-      <p>
-        Deliverables:
-        <a href="LINK_TO_LIVE_MODULE" target="_blank">View module</a>
-      </p>
-    </div>
-
-  </section>
-
-  <section id="process">
-    <h2>Design Process</h2>
-    <p>
-      Briefly describe how you work (e.g., ADDIE, SAM, backward design).
-      Mention how you gather requirements, prototype, test, and iterate.
-    </p>
-    <p>
-      You can also embed a downloadable PDF process overview or a one‑page visual.
-    </p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-  </section>
-
-  <footer>
-    <p>© Your Name – Instructional Design Portfolio</p>
   </footer>
+
 </body>
 </html>
